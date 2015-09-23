@@ -6,15 +6,17 @@ public class Account {
 	private double balance;
 	private double annualInterest; 
 	private java.util.Date accountDate;
-
+	
+	public Account(int i) { //no arg constructor
+	}
+	
 	public Account(int accountNumber, double balance, double annualInterest, Date accountDate) {
 		this.setAccountNumber(accountNumber);
 		this.balance = balance;
 		this.annualInterest = annualInterest;
 		this.accountDate = new java.util.Date();
 	}
-	public Account(int i) {
-	}
+	
 	public Date getDate(){
 		accountDate = new java.util.Date(06/27/2011);
 		return accountDate;
